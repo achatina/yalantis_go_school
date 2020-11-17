@@ -1,6 +1,7 @@
 package dao
 
 type Session struct {
-	Id int `json:"id" gorm:"id"`
-	Metadata string `json:"metadata" gorm:"metadata"`
+	Id    int    `json:"id" gorm:"id"`
+	Ip    string `json:"ip" gorm:"ip"`
+	Token string `json:"token" gorm:"token"`
 }

@@ -5,7 +5,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"
-	"yalantis_test/config"
+	"yalantis_go_school/config"
 )
 
 func Open(c config.Configuration) *gorm.DB {
@@ -15,6 +15,6 @@ func Open(c config.Configuration) *gorm.DB {
 
 	if err != nil {
 		log.Fatal(err)
-	}	
+	}
 	return db
 }
